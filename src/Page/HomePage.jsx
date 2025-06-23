@@ -311,7 +311,7 @@ const services = [
         <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
         <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
         <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="X"><i className="fab fa-x-twitter"></i></a>
+        <a href="" aria-label="X"><i className="fab fa-x-twitter"></i></a>
         <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
       </div>
       <div className="footer-bottom">

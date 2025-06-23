@@ -100,7 +100,7 @@ body, html {
 
 .basics-title {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   margin-bottom: 15px;
   color: #121212;
   font-family: 'Inter', sans-serif;
@@ -413,7 +413,7 @@ body, html {
 }
 
 .service-content p {
-   font-size: 20px;           
+  font-size: 20px;           
   line-height: 1.8;          
   margin-bottom: 20px;
   color: #444;
@@ -624,6 +624,7 @@ body, html {
   max-width: 1100px;
   margin: 0 auto;
   text-align: left;
+  align-items: center;
 }
 
 .contact-form,
@@ -649,8 +650,8 @@ body, html {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 15px;
-  width: 100%;
+  width: 70%;
+  font-size: 14px;
 }
 
 .send-button {
