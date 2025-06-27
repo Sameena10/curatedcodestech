@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomePage.css';
-import cur from "../images/curated.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,6 +10,10 @@ import pythonlogo from "../images/python.svg";
 import angularlogo from "../images/angular.svg";
 import androidlogo from "../images/android.svg";
 import ioslogo from "../images/ios.svg";
+import Front from './Front';
+import Benefit from './Benefit';
+import Quote from './Quote';
+import Contact from './Contact';
 
 
 
@@ -154,27 +157,7 @@ const services = [
 
   return (
     <>
-    <section>
-      <div className="image-wrapper">
-        <h2 className="image-heading">Turn your great ideas into innovative business solutions</h2>
-        <img
-          src={cur}
-          alt="Curated Codes Showcase"
-          className="full-image" />
-      </div>
-    </section>
-    <section className="tech-section">
-  <h2>Technologies We Work With</h2>
-  <div className="underline" />
-  <Slider {...logoSettings} className="tech-slider">
-    {techLogos.map((tech, index) => (
-      <div key={index} className="tech-logo-slide">
-        <img src={tech.file} alt={tech.name} />
-      </div>
-    ))}
-  </Slider>
-</section>
-
+   <Front />
     <section>
       <div className="basics-section">
       <h2 className="section-title">Basics we follow in curated ways</h2>
@@ -207,8 +190,6 @@ const services = [
           </div>
         ))}
       </div>
-
-      {/* Slider for small screens */}
       <div className="industries-slider">
         <Slider {...settings}>
           {industries.map((industry, index) => (
@@ -229,31 +210,28 @@ const services = [
       </div>
     </div>
     </section>
-    <section className="multi-service-section">
-  <h2 className="section-header">Services we offer</h2>
-  {services.map((service, index) => (
-    <div
-      key={index}
-      className={`service-block ${index % 2 !== 0 ? "reverse" : ""}`}
-    >
-      <div className="service-icon-wrapper">{service.icon}</div>
-      <div className="service-content">
-        <h3>{service.title}</h3>
-        <p>{service.description}</p>
-        {service.features && (
-          <ul className="features-list">
-            {service.features.map((f, i) => (
-              <li key={i}>{f}</li>
-            ))}
-          </ul>
-        )}
+<section className="services-section">
+      <h2 className="services-title">Our Services</h2>
+      <div className="services-container">
+        {services.map((service, index) => (
+          <div className="service-card" key={index}>
+            <div className="icon">{service.icon}</div>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+            {service.features && (
+              <ul>
+                {service.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        ))}
       </div>
-    </div>
-  ))}
-</section>
+    </section>
+
 <section className="about-section">
       <h2 className="about-title">About us</h2>
-      <div className="underline"></div>
       <div className="about-content">
         <div className="about-box">
           <h3>Company</h3>
@@ -272,7 +250,20 @@ const services = [
         </div>
       </div>
     </section>
-    <section className="contact-section">
+    <section className="tech-section">
+  <h2>Technologies we work with</h2>
+  <Slider {...logoSettings} className="tech-slider">
+    {techLogos.map((tech, index) => (
+      <div key={index} className="tech-logo-slide">
+        <img src={tech.file} alt={tech.name} />
+      </div>
+    ))}
+  </Slider>
+</section>
+<Benefit />
+<Quote/>
+<Contact />
+    {/* <section className="contact-section">
       <h2 className="contact-title">Contact us</h2>
       <div className="underline"></div>
       <div className="contact-content">
@@ -305,7 +296,7 @@ const services = [
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
     <footer className="footer">
       <div className="social-icons">
         <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
