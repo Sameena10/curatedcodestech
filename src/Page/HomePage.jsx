@@ -240,7 +240,7 @@ const services = [
     </div>
     </section>
 <section className="services-section">
-  <h2 className="services-title">Products We Offer</h2>
+  <h2 className="services-title">Products we offer</h2>
   <div className="services-container">
     {services.map((service, index) => (
       <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
