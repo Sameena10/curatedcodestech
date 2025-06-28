@@ -3,17 +3,21 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaRobot, FaChartBar, FaTools,FaShieldAlt,FaMobileAlt } from "react-icons/fa";
 import reactlogo from "../images/react.svg";
 import dotnetlogo from "../images/dotnet.svg";
 import pythonlogo from "../images/python.svg";
 import angularlogo from "../images/angular.svg";
 import androidlogo from "../images/android.svg";
 import ioslogo from "../images/ios.svg";
-import Front from './Front';
+import bannerImage from '../images/curr.png';
 import Benefit from './Benefit';
 import Quote from './Quote';
 import Contact from './Contact';
+import cybersecurity from '../images/CC.png';
+import dataanalytics from '../images/DA.png';
+import devops from '../images/devOps.png';
+import ai from '../images/AI.png';
+
 
 
 
@@ -54,62 +58,74 @@ const logoSettings = {
 
 const services = [
   {
-  title: "Cyber Security",
+    title: "Open Source Intelligence",
     description:
-      "We offer cybersecurity solutions tailored for OSINT environments. Our services protect your data sources, tools, and analyst workflows from cyber threats—ensuring secure and reliable intelligence gathering.",
+      "We offer OSINT solutions tailored for secure and scalable intelligence gathering. Extract actionable insights from public data sources to support investigations and decision-making.",
     features: [
-      "Threat detection",
-      "Secure data pipelines",
-      "Environment hardening",
-      "Privacy-focused systems",
+      "Social media monitoring",
+      "Web scraping & aggregation",
+      "Sentiment & keyword analysis",
+      "Custom dashboards",
     ],
-    icon: <FaShieldAlt />,
+    image: cybersecurity, 
   },
   {
-    title: "Artificial Intelligence & Machine Learning",
+    title: "Lawful Interception",
     description:
-      "Our AI and Machine Learning solutions enhance OSINT capabilities by automating data analysis and uncovering hidden patterns. Our expert team builds intelligent systems that support faster, smarter investigations.",
+      "Our platform enables lawful interception of communication channels for authorized agencies, ensuring legal compliance, transparency, and security in intelligence workflows.",
     features: [
-      "Predictive threat detection",
-      "Entity recognition and linking",
-      "Custom ML models for data enrichment",
+      "Real-time interception",
+      "Secure data delivery",
+      "Compliance with regulations",
+      "Multi-channel support",
     ],
-    icon: <FaRobot />,
+    image: dataanalytics,
   },
   {
-    title: "Big Data Services",
+    title: "Location-Based Services",
     description:
-      "Our big data analytics services empower OSINT operations with deeper insights and faster intelligence gathering. Our experienced team helps organizations harness vast amounts of open-source data—transforming it into actionable intelligence. From startegy and data integration to analytics and visualization, we use a dat-driven approach to uncover hidden patterns, detect threats, and support smarter, real-time decision making in investigations",
-    icon: <FaChartBar />,
-  },
-  {
-    title: "Data Analytics",
-    description:"Data Analytics solutions the turn raw data into actionable insights.Our experts help you analyze trends, optimize performence and make smarter decisions. Our offering include:",
+      "Track, analyze, and respond to location data in real-time. Our solutions support surveillance, emergency response, and geospatial intelligence for actionable insights.",
     features: [
-      "Data visualization",
-      "Predictive analytics",
-      "Real-time data processing",
-    ], 
-    icon: <FaChartBar />, 
+      "Geo-fencing & alerts",
+      "Live tracking integration",
+      "Mapping & route analysis",
+    ],
+    image: devops,
   },
   {
-    title: "DevOps Automation",
+    title: "Fusion Centre",
     description:
-      "Our application maintenance services provide businesses with the support they need to keep their digital products running smoothly. From bug fixing and optimization to security upgrades and new feature development.",
-    icon: <FaTools />,
+      "Unify data from multiple sources in a centralized intelligence platform. Our fusion solutions support collaborative workflows and real-time situational awareness.",
+    features: [
+      "Data fusion architecture",
+      "Real-time threat feeds",
+      "Customizable access controls",
+    ],
+    image: dataanalytics,
   },
   {
-  title: "App Development",
-  description:
- "Our mobile app developent services deliver cutting-edge solution for bussiness looking to increase their reach and engagement with customers. Our team of expert develpers creates high-performence apps for ios and android platfors that are user friendly and feature rich",
-  features: [
-    "iOS and Android app development",
-    "Cross platform app development",
-    "Mobile app consultation",
-    "Application testing",
-  ],
-  icon: <FaMobileAlt />,
-},
+    title: "Digital Forensics",
+    description:
+      "Delivering advanced digital forensics capabilities to support legal and criminal investigations. From device analysis to evidence preservation and reporting.",
+    features: [
+      "Disk & mobile forensics",
+      "Chain-of-custody logging",
+      "Data recovery tools",
+    ],
+    image: ai,
+  },
+  {
+    title: "Cyber Security",
+    description:
+      "We protect digital infrastructure through comprehensive cybersecurity strategies, tools, and monitoring designed for sensitive intelligence environments.",
+    features: [
+      "Threat detection & response",
+      "Secure communication pipelines",
+      "Vulnerability assessments",
+      "Endpoint protection",
+    ],
+    image: cybersecurity,
+  },
 ];
 
   const settings = {
@@ -123,44 +139,57 @@ const services = [
     arrows: false,
   };
   const basics = [
-    {
-      title: "Ideation and Brainstorming",
-      description:
-        "Brainstorming ideas that solve a particular problem faced by target users",
-    },
-    {
-      title: "Requirements and Expectations",
-      description:
-        "Interacting with stakeholders and users to collect requirements and set expectations",
-    },
-    {
-      title: "Designing and Prototyping",
-      description:
-        "Creating the architecture and prototype of the software system and its elements",
-    },
-    {
-      title: "Development and Testing",
-      description:
-        "Building the software using the latest technology and doing regressive testing",
-    },
-    {
-      title: "Deployment and Training",
-      description:
-        "Preparing the software to run in a specific environment and train your team to use it",
-    },
-    {
-      title: "SAT and Support",
-      description:
-        "Conducting (SAT) System Acceptance Test and providing support as per SLA",
-    },
-  ];
+  {
+    title: "Data-Driven Decision Making",
+    description:
+      "Leveraging data to support informed, evidence-based decisions in investigations and operations.",
+  },
+  {
+    title: "Technology Integration into Workflows",
+    description:
+      "Embedding IT solutions into daily law enforcement processes without disrupting critical operations.",
+  },
+  {
+    title: "Automation of Routine Investigative Tasks",
+    description:
+      "Identifying and automating repetitive tasks to enhance focus on complex investigative work.",
+  },
+  {
+    title: "Collaboration-Centric Development",
+    description:
+      "Building secure platforms that promote real-time, inter-agency communication and teamwork.",
+  },
+  {
+    title: "Proactive Threat Monitoring",
+    description:
+      "Implementing systems to detect early signs of criminal activity across digital and physical spaces.",
+  },
+  {
+    title: "Scalable and Adaptive Solutions",
+    description:
+      "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
+  },
+];
+
 
   return (
     <>
-   <Front />
+  <section className="hero-container">
+      <div className="hero-left">
+        {/* <p className="hero-subtext">Open Source / Data / Intelligence</p> */}
+        <h1 className="hero-heading">
+          <span className="highlight">AI</span> powered <br />
+          intelligence for <br />
+          every critical situations<span className="dot">.</span>
+        </h1>
+      </div>
+      <div className="hero-right">
+        <img src={bannerImage} alt="Dashboard" className="hero-image" />
+      </div>
+    </section>
     <section>
       <div className="basics-section">
-      <h2 className="section-title">Basics we follow in curated ways</h2>
+      <h2 className="section-title">Approaches we take to empower law enforcement</h2>
       <div className="basics-grid">
         {basics.map((item, index) => (
           <div key={index} className="basics-item">
@@ -211,24 +240,29 @@ const services = [
     </div>
     </section>
 <section className="services-section">
-      <h2 className="services-title">Our Services</h2>
-      <div className="services-container">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-            <div className="icon">{service.icon}</div>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            {service.features && (
-              <ul>
-                {service.features.map((feature, i) => (
-                  <li key={i}>{feature}</li>
-                ))}
-              </ul>
-            )}
-          </div>
-        ))}
+  <h2 className="services-title">Products We Offer</h2>
+  <div className="services-container">
+    {services.map((service, index) => (
+      <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
+        <div className="service-image-container">
+          <img src={service.image} alt={service.title} className="service-image" />
+        </div>
+        <div className="service-content">
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          {service.features && (
+            <ul>
+              {service.features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
 
 <section className="about-section">
       <h2 className="about-title">About us</h2>
@@ -263,40 +297,6 @@ const services = [
 <Benefit />
 <Quote/>
 <Contact />
-    {/* <section className="contact-section">
-      <h2 className="contact-title">Contact us</h2>
-      <div className="underline"></div>
-      <div className="contact-content">
-        <div className="contact-form">
-          <h3>Contact us</h3>
-          <form>
-            <input type="text" placeholder="Name*" required />
-            <input type="tel" placeholder="Phone*" required />
-            <input type="email" placeholder="Email*" required />
-            <textarea rows="5" placeholder="Message"></textarea>
-            <button type="submit" className="send-button">Send</button>
-          </form>
-        </div>
-        <div className="contact-info">
-          <h3>Feel free to connect</h3>
-          <p>Contact us during normal business hours.</p>
-          <a
-            href="https://wa.me/919238738348"
-            className="whatsapp-button"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-            Message us on WhatsApp
-          </a>
-          <div className="company-info">
-            <h4>Curated Codes Technologies</h4>
-            <p>info@curatedcodes.in</p>
-            <p>+91 9238738348</p>
-          </div>
-        </div>
-      </div>
-    </section> */}
     <footer className="footer">
       <div className="social-icons">
         <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>

@@ -27,7 +27,7 @@ const Contact = () => {
             <p className="email">info@curatedcodes.in</p>
             <p className="schedule">
               <strong>Daily Schedule:</strong><br />
-              <em>Mon–Sat: 10:00–20:00</em>
+              <em>Mon–Sat: 10:00 A.M.–20:00 P.M.</em>
             </p>
 
             <a
