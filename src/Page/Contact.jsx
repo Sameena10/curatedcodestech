@@ -1,62 +1,44 @@
 import React from 'react';
 import './Contact.css';
-import { FaUserTie } from 'react-icons/fa';
-import { FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
-
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <>
-      <section className="work-together-section">
-        <div className="work-content">
-          <FaUserTie className="work-icon" />
-          <h2>LET’S WORK TOGETHER</h2>
-          <button className="work-button">CONTACT US</button>
-        </div>
-      </section>
-      <section className="contact-section">
-        <div className="contact-container">
-          {/* Left Column */}
-          <div className="contact-info">
-            <FaEnvelope className="contact-icon" />
-            <h2><strong>CURATED</strong></h2>
-            <h3>CODES</h3>
-            <ul>
-              <li>Indore</li>
-            </ul>
-            <p className="email">info@curatedcodes.in</p>
-            <p className="schedule">
-              <strong>Daily Schedule:</strong><br />
-              <em>Mon–Sat: 10:00 A.M.–20:00 P.M.</em>
-            </p>
+    <section className="contact-section">
+      <h2 className="contact-title">Contact us</h2>
 
-            <a
-              href="https://wa.me/919238738348"
-              className="whatsapp-button"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp className="whatsapp-icon" />
-              Chat on WhatsApp
-            </a>
-          </div>
-
-          {/* Right Column */}
-          <div className="contact-form">
-            <h2>JUST ASK US ANYTHING!</h2>
-            <p className="form-subtitle">Let us know how we can help you:</p>
-            <form>
-              <input type="email" placeholder="Email" required />
-              <input type="text" placeholder="Name" required />
-              <input type="tel" placeholder="Phone Number" />
-              <textarea rows="4" placeholder="Type your message here.." required></textarea>
-              <button type="submit">Submit</button>
-            </form>
+      <div className="contact-wrapper">
+        <form className="contact-form">
+          <h3 className="form-heading">Contact Us</h3>
+          <input type="text" placeholder="Name*" required />
+          <input type="tel" placeholder="Phone*" required />
+          <input type="email" placeholder="Email*" required />
+          <textarea placeholder="Message" rows="5"></textarea>
+          <button type="submit" className="form-button">Send</button>
+        </form>
+        <div className="contact-info">
+          <h4 className="info-title">Feel free to connect</h4>
+          <p className="info-desc">Contact us during normal business hours.</p>
+          <a
+            href="https://wa.me/919238738348"
+            className="whatsapp-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+    src="https://img.icons8.com/ios-filled/20/25D366/whatsapp.png"
+    alt="WhatsApp"
+  />
+            Message us on WhatsApp
+          </a>
+          <div className="company-info">
+            <h5>Curated Codes Technologies Pvt Ltd</h5>
+            <p>info@curatedcodes.in</p>
+            <p>+91 9238783848</p>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
-export default Contact;
+export default ContactUs;

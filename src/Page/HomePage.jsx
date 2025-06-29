@@ -3,20 +3,16 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import reactlogo from "../images/react.svg";
-import dotnetlogo from "../images/dotnet.svg";
-import pythonlogo from "../images/python.svg";
-import angularlogo from "../images/angular.svg";
-import androidlogo from "../images/android.svg";
-import ioslogo from "../images/ios.svg";
-import bannerImage from '../images/curr.png';
-import Benefit from './Benefit';
-import Quote from './Quote';
-import Contact from './Contact';
-import cybersecurity from '../images/CC.png';
-import dataanalytics from '../images/DA.png';
-import devops from '../images/devOps.png';
-import ai from '../images/AI.png';
+import bannerImage from '../images/c.png';
+import Contact from './Contact.jsx';
+import {
+  FaSearch,
+  FaUserSecret,
+  FaMapMarkedAlt,
+  FaProjectDiagram,
+  FaMicroscope,
+  FaShieldAlt
+} from "react-icons/fa";
 
 
 
@@ -29,106 +25,111 @@ const HomePage = () => {
   { name: "Telecom", color: "#4c5c57", textColor: "#fff" },
   { name: "Defence", color: "#4a2b23", textColor: "#fff" },
 ];
-
-const techLogos = [
-  { name: "React", file: reactlogo },
-  { name: ".NET", file: dotnetlogo },
-  { name: "Python", file: pythonlogo },
-  { name: "Angular", file: angularlogo },
-  { name: "Android", file: androidlogo },
-  {name: "iOS", file: ioslogo },
-];
-const logoSettings = {
-  infinite: true,
-  speed: 3000,                
-  autoplay: true,
-  autoplaySpeed: 0,           
-  cssEase: "linear",          
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  arrows: false,
-  pauseOnHover: false,        
-  responsive: [
-    { breakpoint: 1024, settings: { slidesToShow: 4 } },
-    { breakpoint: 768, settings: { slidesToShow: 3 } },
-    { breakpoint: 480, settings: { slidesToShow: 2 } },
-  ],
-};
-
-
 const services = [
   {
     title: "Open Source Intelligence",
     description:
-      "We offer OSINT solutions tailored for secure and scalable intelligence gathering. Extract actionable insights from public data sources to support investigations and decision-making.",
+      "We provide OSINT tools to gather public data securely from platforms like social media, news, and the dark web. Our platform uses sentiment analysis, NLP, and real-time alerts to support investigations and threat detection.",
     features: [
       "Social media monitoring",
       "Web scraping & aggregation",
       "Sentiment & keyword analysis",
       "Custom dashboards",
     ],
-    image: cybersecurity, 
+    icon: <FaSearch size={100} color="#002244" />,
   },
   {
     title: "Lawful Interception",
     description:
-      "Our platform enables lawful interception of communication channels for authorized agencies, ensuring legal compliance, transparency, and security in intelligence workflows.",
+      "Our solution enables agencies to monitor communications legally in real-time with encrypted storage, detailed logs, and support for VoIP, mobile, and messaging apps.",
     features: [
       "Real-time interception",
       "Secure data delivery",
       "Compliance with regulations",
       "Multi-channel support",
     ],
-    image: dataanalytics,
+    icon: <FaUserSecret size={100} color="#002244" />,
   },
   {
     title: "Location-Based Services",
     description:
-      "Track, analyze, and respond to location data in real-time. Our solutions support surveillance, emergency response, and geospatial intelligence for actionable insights.",
+      "Track people, vehicles, and assets with real-time maps, geo-fencing, and alert systems. Integrates GPS, satellite, and mobile signal data for reliable insights.",
     features: [
       "Geo-fencing & alerts",
       "Live tracking integration",
       "Mapping & route analysis",
     ],
-    image: devops,
+    icon: <FaMapMarkedAlt size={100} color="#002244" />,
   },
   {
     title: "Fusion Centre",
     description:
-      "Unify data from multiple sources in a centralized intelligence platform. Our fusion solutions support collaborative workflows and real-time situational awareness.",
+      "Our platform merges intelligence from different sources into one dashboard, enabling real-time threat analysis, link detection, and secure data sharing across departments.",
     features: [
       "Data fusion architecture",
       "Real-time threat feeds",
       "Customizable access controls",
     ],
-    image: dataanalytics,
+    icon: <FaProjectDiagram size={100} color="#002244" />,
   },
   {
     title: "Digital Forensics",
     description:
-      "Delivering advanced digital forensics capabilities to support legal and criminal investigations. From device analysis to evidence preservation and reporting.",
+      "Recover and analyze digital evidence from phones, hard drives, and cloud platforms. Ensure secure handling with full chain-of-custody support for legal use.",
     features: [
       "Disk & mobile forensics",
       "Chain-of-custody logging",
       "Data recovery tools",
     ],
-    image: ai,
+    icon: <FaMicroscope size={100} color="#002244" />,
   },
   {
     title: "Cyber Security",
     description:
-      "We protect digital infrastructure through comprehensive cybersecurity strategies, tools, and monitoring designed for sensitive intelligence environments.",
+      "Protect critical systems with real-time threat detection, endpoint protection, and AI-based insights. Built for both enterprise and national defense environments.",
     features: [
       "Threat detection & response",
       "Secure communication pipelines",
       "Vulnerability assessments",
       "Endpoint protection",
     ],
-    image: cybersecurity,
+    icon: <FaShieldAlt size={100} color="#002244" />,
   },
 ];
 
-  const settings = {
+const basics = [
+    {
+      title: "Ideation and Brainstorming",
+      description:
+        "Brainstorming ideas that solve a particular problem faced by target users",
+    },
+    {
+      title: "Requirements and Expectations",
+      description:
+        "Interacting with stakeholders and users to collect requirements and set expectations",
+    },
+    {
+      title: "Designing and Prototyping",
+      description:
+        "Creating the architecture and prototype of the software system and its elements",
+    },
+    {
+      title: "Development and Testing",
+      description:
+        "Building the software using the latest technology and doing regressive testing",
+    },
+    {
+      title: "Deployment and Training",
+      description:
+        "Preparing the software to run in a specific environment and train your team to use it",
+    },
+    {
+      title: "SAT and Support",
+      description:
+        "Conducting (SAT) System Acceptance Test and providing support as per SLA",
+    },
+  ];
+const settings = {
     dots: false,
     infinite: true,
     speed: 500,
@@ -138,55 +139,19 @@ const services = [
     slidesToScroll: 1,
     arrows: false,
   };
-  const basics = [
-  {
-    title: "Data-Driven Decision Making",
-    description:
-      "Leveraging data to support informed, evidence-based decisions in investigations and operations.",
-  },
-  {
-    title: "Technology Integration into Workflows",
-    description:
-      "Embedding IT solutions into daily law enforcement processes without disrupting critical operations.",
-  },
-  {
-    title: "Automation of Routine Investigative Tasks",
-    description:
-      "Identifying and automating repetitive tasks to enhance focus on complex investigative work.",
-  },
-  {
-    title: "Collaboration-Centric Development",
-    description:
-      "Building secure platforms that promote real-time, inter-agency communication and teamwork.",
-  },
-  {
-    title: "Proactive Threat Monitoring",
-    description:
-      "Implementing systems to detect early signs of criminal activity across digital and physical spaces.",
-  },
-  {
-    title: "Scalable and Adaptive Solutions",
-    description:
-      "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
-  },
-];
 
 
   return (
     <>
-  <section className="hero-container">
-      <div className="hero-left">
-        {/* <p className="hero-subtext">Open Source / Data / Intelligence</p> */}
-        <h1 className="hero-heading">
-          <span className="highlight">AI</span> powered <br />
-          intelligence for <br />
-          every critical situations<span className="dot">.</span>
-        </h1>
-      </div>
-      <div className="hero-right">
-        <img src={bannerImage} alt="Dashboard" className="hero-image" />
-      </div>
-    </section>
+  <section>
+  <div className="hero-banner">
+  <h2 className="hero-heading">
+    AI powered intelligence for every critical situations
+  </h2>
+  <img src={bannerImage} alt="Curated Codes Banner" className="banner-image" />
+</div>
+</section>
+
     <section>
       <div className="basics-section">
       <h2 className="section-title">Approaches we take to empower law enforcement</h2>
@@ -239,29 +204,31 @@ const services = [
       </div>
     </div>
     </section>
-<section className="services-section">
-  <h2 className="services-title">Products we offer</h2>
+    <section className="services-section">
+  <h2 className="section-header">Products we offer</h2>
   <div className="services-container">
     {services.map((service, index) => (
       <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
         <div className="service-image-container">
-          <img src={service.image} alt={service.title} className="service-image" />
+          <div className="icon-square-box">
+            {service.icon}
+          </div>
         </div>
         <div className="service-content">
           <h3>{service.title}</h3>
           <p>{service.description}</p>
-          {service.features && (
-            <ul>
-              {service.features.map((feature, i) => (
-                <li key={i}>{feature}</li>
-              ))}
-            </ul>
-          )}
+          <ul>
+            {service.features.map((feature, i) => (
+              <li key={i}>{feature}</li>
+            ))}
+          </ul>
         </div>
       </div>
     ))}
   </div>
 </section>
+
+
 
 
 <section className="about-section">
@@ -284,25 +251,13 @@ const services = [
         </div>
       </div>
     </section>
-    <section className="tech-section">
-  <h2>Technologies we work with</h2>
-  <Slider {...logoSettings} className="tech-slider">
-    {techLogos.map((tech, index) => (
-      <div key={index} className="tech-logo-slide">
-        <img src={tech.file} alt={tech.name} />
-      </div>
-    ))}
-  </Slider>
-</section>
-<Benefit />
-<Quote/>
 <Contact />
     <footer className="footer">
       <div className="social-icons">
         <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
-        <a href="#" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-        <a href="" aria-label="X"><i className="fab fa-x-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>   
+        <a href="https://www.linkedin.com/posts/curated-codes-technologies_mernfullstack-itacademy-careerlauncher-activity-7274404527087190017-lsw_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZWvO8Bg0ggwsc2pFdMvHiXLVsim0-juag" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="X"><i className="fab fa-x-twitter"></i></a>
         <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
       </div>
       <div className="footer-bottom">
