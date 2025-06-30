@@ -19,7 +19,7 @@ const ContactUs = () => {
           <h4 className="info-title">Feel free to connect</h4>
           <p className="info-desc">Contact us during normal business hours.</p>
           <a
-            href="https://wa.me/919238738348"
+            href="https://wa.me/9189662132605"
             className="whatsapp-button"
             target="_blank"
             rel="noopener noreferrer"
@@ -31,9 +31,9 @@ const ContactUs = () => {
             Message us on WhatsApp
           </a>
           <div className="company-info">
-            <h5>Curated Codes Technologies Pvt Ltd</h5>
+            <h5>Curated Codes Technologies Pvt. Ltd.</h5>
             <p>info@curatedcodes.in</p>
-            <p>+91 9238783848</p>
+            <p>+91 89662132605</p>
           </div>
         </div>
       </div>

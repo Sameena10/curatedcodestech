@@ -24,26 +24,6 @@
   max-height: 600px;
   border-radius: 20px; 
 }
-
-/* @media (max-width: 768px) {
-  .hero-heading {
-    font-size: 22px;
-    margin: 16px 0;
-  }
-  .banner-image {
-    max-height: 240px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-heading {
-    font-size: 20px;
-    margin: 12px 0;
-  }
-  .banner-image {
-    max-height: 180px;
-  }
-} */
 @media (max-width: 768px) {
   .hero-heading {
     font-size: 22px;
@@ -87,10 +67,10 @@
 }
 
 .section-title::after {
-  content: "";
+ content: "";
   display: block;
   width: 60px;
-  height: 3px;
+  height: 4px;
   background-color: #000;
   margin: 12px auto 0;
   border-radius: 2px;
@@ -124,7 +104,7 @@
 
 @media (max-width: 768px) {
   .section-title {
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 40px;
   }
 
@@ -138,13 +118,13 @@
   }
 
   .basics-description {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .section-title {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 30px;
   }
 
@@ -154,11 +134,11 @@
   }
 
   .basics-title {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .basics-description {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -232,6 +212,12 @@
 }
 
 @media (min-width: 768px) {
+  .industries-title {
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+
+  }
   .industries-grid {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +241,7 @@
   }
 
   .industries-title {
-    font-size: 32px;
+    font-size: 22px;
     margin-bottom: 40px;
   }
 
@@ -273,7 +259,7 @@
   }
 
   .industries-title {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 30px;
   }
 
@@ -325,7 +311,6 @@
   margin: 0 auto;
 }
 
-/* ❌ Card look removed, alignment preserved */
 .service-row {
   display: flex;
   align-items: stretch;
@@ -382,7 +367,7 @@
 .service-content p {
   font-size: 20px;
   color: #000;
-  line-height: 1.6;
+  line-height: 1.2;
   margin-bottom: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 200;
@@ -399,62 +384,14 @@
 .service-content ul li {
   margin-bottom: 8px;
 }
-
-/* ✅ Responsive layout, no card */
-/* @media (max-width: 768px) {
-  .service-row,
-  .service-row.reverse {
-    flex-direction: column;
-    padding: 0;
-    border-radius: 0;
-    background-color: transparent;
-    box-shadow: none;
-    margin-bottom: 24px;
-  }
-
-  .service-image-container {
-    padding: 30px 0;
-    background-color: #e6eef7;
-    border-radius: 16px 16px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  .icon-square-box svg {
-    width: 60px;
-    height: 60px;
-    color: #002244;
-  }
-
-  .service-content {
-    padding: 16px;
-    text-align: center;
-  }
-
-  .service-content h3 {
-    font-size: 24px;
-  }
-
-  .service-content p,
-  .service-content ul {
-    font-size: 20px;
-    text-align: left;
-  }
-
-  .services-container {
-    gap: 24px;
-  }
-} */
  @media (max-width: 768px) {
   .service-row,
   .service-row.reverse {
     flex-direction: column;
     padding: 0;
     border-radius: 16px;
-    background-color: #fff;               /* Card look */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Card shadow */
+    background-color: #fff;               
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
     overflow: hidden;
     margin-bottom: 24px;
   }
@@ -467,6 +404,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+  .section-header {
+    font-size: 22px;
+    margin-bottom: 30px;
   }
 
   .icon-square-box {
@@ -487,12 +428,13 @@
   }
 
   .service-content h3 {
-    font-size: 24px;
+    font-size: 20px;
+    text-align: left;
   }
 
   .service-content p,
   .service-content ul {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
   }
 
@@ -500,10 +442,6 @@
     gap: 24px;
   }
 }
-
-
-
-
 /* About Section */
 .about-section {
   padding: 20px 20px;
@@ -512,7 +450,7 @@
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 32px !important;
   font-weight: 300 !important;
   margin-bottom: 40px;
   color: #002244;
@@ -558,13 +496,14 @@
 
 .about-box p {
   font-size: 24px;
-  color: #000;
   line-height: 1.6;
   font-family: 'Inter', sans-serif;
-  font-weight: 200;
   width: 100%; 
-  margin: 0;
   padding: 0 10px; 
+  color: #000;
+  margin-bottom: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
 }
 
 .about-section:hover .underline {
@@ -579,18 +518,22 @@
 
   .about-title {
     font-weight: 300;
-    font-size: 36px;
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
   }
 
   .about-box h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     font-family: "Inter", sans-serif;
+    text-align: center;
   }
 
   .about-box p {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 200;
     font-family: "Inter", sans-serif;
+    text-align: center;
   }
 }
 
@@ -600,7 +543,9 @@
   }
 
   .about-title {
-    font-size: 28px;
+    font-size: 24px !important;
+    font-family: "Inter", sans-serif;
+    font-weight: 200 !important;
   }
 
   .about-box h3 {

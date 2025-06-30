@@ -147,7 +147,7 @@ const settings = {
   <section>
   <div className="hero-banner">
   <h2 className="hero-heading">
-    AI powered intelligence for every critical situations
+    AI powered intelligence for every critical situation
   </h2>
   <img src={bannerImage} alt="Curated Codes Banner" className="banner-image" />
 </div>
@@ -238,16 +238,13 @@ const settings = {
         <div className="about-box">
           <h3>Company</h3>
           <p>
-            Curated Codes is a digital engineering company focused on delivering curated services and products
-            to help businesses achieve their transformation goals. We are enabling them to drive unmatched
-            innovation and growth.
+           Curated Codes is a digital engineering firm empowering law enforcement agencies with AI-driven tools and secure platforms. We help accelerate investigations, enhance intelligence gathering, and support national security through data-driven insights and real-time collaboration.
           </p>
         </div>
         <div className="about-box">
           <h3>People</h3>
           <p>
-            We are a team of industry experts having diversified experience in a variety of the latest technologies.
-            We ensure that every line of code we write is curated for the specific business need of our customers.
+           We are a team of industry experts with deep, cross-domain experience in cutting-edge technologies. Every solution we build is precisely curated to meet the unique operational and security needs of law enforcement and intelligence agencies.
           </p>
         </div>
       </div>
