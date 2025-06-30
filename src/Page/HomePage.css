@@ -119,6 +119,7 @@
 
   .basics-description {
     font-size: 20px;
+    font-family: "Inter", sans-serif;
   }
 }
 
@@ -447,6 +448,7 @@
   padding: 20px 20px;
   background-color: #fff;
   text-align: center;
+  align-items: center;
 }
 
 .about-title {
