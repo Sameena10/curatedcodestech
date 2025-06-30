@@ -33,9 +33,14 @@ const ContactUs = () => {
   };
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    // Allow only digits for phone input
+    if (name === 'phone' && !/^\d*$/.test(value)) return;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
     });
   };
 
@@ -50,8 +55,9 @@ const ContactUs = () => {
 
   return (
     <section className="contact-section">
+      {/* ✅ Toast Centered */}
       <ToastContainer position="top-center" autoClose={3000} />
-
+      
       <h2 className="contact-title">Contact us</h2>
 
       <div className="contact-wrapper">
@@ -65,13 +71,16 @@ const ContactUs = () => {
             value={formData.name}
             onChange={handleChange}
           />
+
           <input
             type="tel"
             name="phone"
             placeholder="Phone*"
             value={formData.phone}
             onChange={handleChange}
+            maxLength="15"
           />
+
           <input
             type="email"
             name="email"
@@ -79,6 +88,7 @@ const ContactUs = () => {
             value={formData.email}
             onChange={handleChange}
           />
+
           <textarea
             name="message"
             placeholder="Message"
