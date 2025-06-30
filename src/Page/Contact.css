@@ -151,9 +151,10 @@
 }
 
 @media (max-width: 768px) {
-  .contact-title{
+  .contact-title {
     font-size: 22px;
   }
+
   .contact-wrapper {
     flex-direction: column;
     align-items: center;

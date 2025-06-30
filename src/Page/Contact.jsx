@@ -1,4 +1,3 @@
-import React from 'react';
 import './Contact.css';
 
 const ContactUs = () => {
@@ -25,9 +24,9 @@ const ContactUs = () => {
             rel="noopener noreferrer"
           >
             <img
-    src="https://img.icons8.com/ios-filled/20/25D366/whatsapp.png"
-    alt="WhatsApp"
-  />
+              src="https://img.icons8.com/ios-filled/20/25D366/whatsapp.png"
+              alt="WhatsApp"
+            />
             Message us on WhatsApp
           </a>
           <div className="company-info">
