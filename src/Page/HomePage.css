@@ -60,7 +60,7 @@
 }
 
 .section-title {
-  font-size: 32px;
+  font-size: 32px ;
   font-weight: 300;
   margin-bottom: 50px;
   color: #002244;
@@ -156,7 +156,7 @@
 }
 
 .industries-title {
-  font-size: 32px;
+  font-size: 32px !important;
   font-weight: 300;
   margin-bottom: 60px;
   color: #002244;
