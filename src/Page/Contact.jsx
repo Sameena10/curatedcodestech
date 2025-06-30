@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css';
 
 const ContactUs = () => {
+  const formRef = useRef();
+
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -35,8 +38,9 @@ const ContactUs = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    // Allow only digits for phone input
-    if (name === 'phone' && !/^\d*$/.test(value)) return;
+    if (name === 'phone' && !/^\d*$/.test(value)) {
+      return; 
+    }
 
     setFormData({
       ...formData,
@@ -46,22 +50,38 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      toast.success('Message sent successfully!');
-      console.log('Submitted:', formData);
-      setFormData({ name: '', phone: '', email: '', message: '' });
-    }
+
+    if (!validate()) return;
+
+    emailjs.sendForm(
+      'service_pneyvpr',
+      'template_hztdk5s',
+      formRef.current,
+      'eo2-EpHW7Vqwv80bc'
+    ).then(
+      () => {
+        toast.success('Message sent successfully!');
+        setFormData({ name: '', phone: '', email: '', message: '' });
+      },
+      (error) => {
+        toast.error('Failed to send message');
+        console.error('EmailJS Error:', error.text);
+      }
+    );
   };
 
   return (
     <section className="contact-section">
-      {/* ✅ Toast Centered */}
       <ToastContainer position="top-center" autoClose={3000} />
-      
       <h2 className="contact-title">Contact us</h2>
 
       <div className="contact-wrapper">
-        <form className="contact-form" onSubmit={handleSubmit} noValidate>
+        <form
+          className="contact-form"
+          onSubmit={handleSubmit}
+          noValidate
+          ref={formRef}
+        >
           <h3 className="form-heading">Contact Us</h3>
 
           <input
