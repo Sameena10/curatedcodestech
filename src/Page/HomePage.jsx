@@ -98,37 +98,38 @@ const services = [
 ];
 
 const basics = [
-    {
-      title: "Ideation and Brainstorming",
-      description:
-        "Brainstorming ideas that solve a particular problem faced by target users",
-    },
-    {
-      title: "Requirements and Expectations",
-      description:
-        "Interacting with stakeholders and users to collect requirements and set expectations",
-    },
-    {
-      title: "Designing and Prototyping",
-      description:
-        "Creating the architecture and prototype of the software system and its elements",
-    },
-    {
-      title: "Development and Testing",
-      description:
-        "Building the software using the latest technology and doing regressive testing",
-    },
-    {
-      title: "Deployment and Training",
-      description:
-        "Preparing the software to run in a specific environment and train your team to use it",
-    },
-    {
-      title: "SAT and Support",
-      description:
-        "Conducting (SAT) System Acceptance Test and providing support as per SLA",
-    },
-  ];
+  {
+    title: "Data-Driven Decision Making",
+    description:
+      "Leveraging data to support informed, evidence-based decisions in investigations and operations.",
+  },
+  {
+    title: "Technology Integration into Workflows",
+    description:
+      "Embedding IT solutions into daily law enforcement processes without disrupting critical operations.",
+  },
+  {
+    title: "Automation of Routine Investigative Tasks",
+    description:
+      "Identifying and automating repetitive tasks to enhance focus on complex investigative work.",
+  },
+  {
+    title: "Collaboration-Centric Development",
+    description:
+      "Building secure platforms that promote real-time, inter-agency communication and teamwork.",
+  },
+  {
+    title: "Proactive Threat Monitoring",
+    description:
+      "Implementing systems to detect early signs of criminal activity across digital and physical spaces.",
+  },
+  {
+    title: "Scalable and Adaptive Solutions",
+    description:
+      "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
+  },
+];
+
 const settings = {
     dots: false,
     infinite: true,
