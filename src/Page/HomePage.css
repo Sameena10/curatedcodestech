@@ -533,31 +533,37 @@
 
 @media (max-width: 768px) {
   .about-content {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;       /* Center horizontally */
+    justify-content: center;   /* Optional: Center vertically if needed */
     text-align: center;
+    margin: 0 auto;            /* Ensures no horizontal shift */
+    padding: 0 10px;           /* Small side padding for spacing */
   }
 
   .about-box {
-    padding: 10px 0;
     width: 100%;
-  }
-
-  .about-box h3 {
-    font-size: 20px;
-    font-weight: 300;
-    font-family: "Inter", sans-serif;
-    text-align: center;
+    max-width: 600px;          /* Prevent overly wide paragraphs */
+    margin: 0 auto;            /* Center each box */
+    padding: 10px 0;
   }
 
   .about-box p {
     font-size: 18px;
-    font-weight: 200;
     font-family: "Inter", sans-serif;
     text-align: center;
     margin: 0 auto;
   }
+
+  .about-box h3 {
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
+
 
 @media (max-width: 480px) {
   .about-content {
