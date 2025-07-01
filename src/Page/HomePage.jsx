@@ -149,7 +149,7 @@ const HomePage = () => {
           <img src={bannerImage} alt="Curated Codes Banner" className="banner-image" />
         </div>
         <h2 className="heros-heading">
-            AI-Powered Intelligence Solutions for Every Critical Situation
+            AI-powered Intelligence Solutions for Every Critical Situation
           </h2>
       </section>
       <section>

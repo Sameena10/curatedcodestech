@@ -9,26 +9,27 @@
 }
 
 .hero-heading {
-  font-size: 64px;
+  font-size: 40px;
   font-weight: 300;
   margin: 20px 0;
   color: #002244;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
+  color:#000;
 }
 .heros-heading {
-  font-size: 48px;
+  font-size: 32px;
   font-weight: 300;
   margin: 20px 0;
-  color: #002244;
+  color: #555;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
 }
 
 .banner-image {
   width: 100%;               
-  max-width: 1600px;         
-  max-height: 600px;        
+  max-width: 1200px;         
+  max-height: 430px;        
   object-fit: cover;         
   display: block;
   margin: 0 auto;
@@ -90,18 +91,18 @@
   color: #000;
   text-align: center;
   width: 100%;
-  padding: 40px 20px;
+  padding: 40px 5%;
   box-sizing: border-box;
 }
 
 .section-title {
-  font-size: 32px ;
+  font-size: 24px;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #002244;
   position: relative;
   display: inline-block;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .section-title::after {
@@ -116,9 +117,9 @@
 
 .basics-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px 60px;
-  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px 40px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0;
 }
@@ -128,45 +129,44 @@
 }
 
 .basics-title {
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 300;
   color: #003366;
   margin-bottom: 10px;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .basics-description {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   color: #000;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
   .section-title {
-    font-size: 22px;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
   .basics-grid {
-    gap: 30px 40px;
+    gap: 20px 30px;
     padding: 0 10px;
   }
 
   .basics-title {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .basics-description {
-    font-size: 20px;
-    /* font-family: "Inter", sans-serif; */
+    font-size: 17px;
   }
 }
 
 @media (max-width: 480px) {
   .section-title {
-    font-size: 22px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .basics-grid {
@@ -175,13 +175,14 @@
   }
 
   .basics-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .basics-description {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
+
 
 /* services we offer */
 .industries-section {
@@ -199,7 +200,7 @@
   color: #002244;
   text-align: center;
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .industries-title::after {
@@ -329,7 +330,7 @@
   color: #002244;
   text-align: center;
   position: relative;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .section-header::after {
@@ -400,7 +401,7 @@
   color: #003366;
   margin-bottom: 12px;
   font-weight: 200;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
 }
 
 .service-content p {
@@ -408,7 +409,7 @@
   color: #000;
   line-height: 1.2;
   margin-bottom: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', Arial, sans-serif;
   font-weight: 200;
 }
 
@@ -416,7 +417,7 @@
   padding-left: 20px;
   font-size: 20px;
   color: #000;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
   font-weight: 200;
 }
 
@@ -433,7 +434,7 @@
     font-size: 20px;
     line-height: 1.6;
     color: #000;
-    font-family: 'Inter', sans-serif;
+    font-family: "Noto Sans", Arial, sans-serif;
     font-weight: 200;
   }
 
@@ -512,6 +513,7 @@
   letter-spacing: -0.02em;
   position: relative;
   display: inline-block;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .about-title::after {
@@ -552,6 +554,7 @@
   font-weight: 400;
   margin-bottom: 20px;
   color: #002244;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .about-box p {
@@ -559,6 +562,7 @@
   font-weight: 200;
   line-height: 1.6;
   color: #000;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 @media (max-width: 768px) {

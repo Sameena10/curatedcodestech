@@ -11,6 +11,7 @@
   color: #002244;
   margin-bottom: 40px;
   position: relative;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .contact-title::after {
@@ -48,6 +49,7 @@
   margin-bottom: 10px;
   color: #000;
   align-self: flex-start;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .contact-form input,
@@ -105,7 +107,7 @@
   margin-bottom: 8px;
   color: #000;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .info-desc {
@@ -113,7 +115,7 @@
   color: #666;
   margin-bottom: 20px;
   text-align: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .whatsapp-button {
@@ -129,7 +131,7 @@
   text-decoration: none;
   border: 1px solid #25D366;
   margin-bottom: 30px;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .company-info {
@@ -141,13 +143,14 @@
   font-weight: 300;
   color: #000;
   margin-bottom: 6px;
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .company-info p {
   font-size: 18px;
   color: #000;
   margin: 2px 0;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 @media (max-width: 768px) {
