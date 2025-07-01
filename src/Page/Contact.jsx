@@ -82,7 +82,7 @@ const ContactUs = () => {
           noValidate
           ref={formRef}
         >
-          <h3 className="form-heading">Contact Us</h3>
+          {/* <h3 className="form-heading">Contact Us</h3> */}
 
           <input
             type="text"
@@ -121,9 +121,13 @@ const ContactUs = () => {
         </form>
 
         <div className="contact-info">
-          <h4 className="info-title">Feel free to connect</h4>
-          <p className="info-desc">Contact us during normal business hours.</p>
-          <a
+          <div className="company-info">
+            <h5>Curated Codes Technologies Pvt. Ltd.</h5>
+            <p>info@curatedcodes.in</p>
+            <p>+91 8962132605</p>
+          </div>
+          <div className="info-title">
+            <a
             href="https://wa.me/918962132605"
             className="whatsapp-button"
             target="_blank"
@@ -135,11 +139,9 @@ const ContactUs = () => {
             />
             Message us on WhatsApp
           </a>
-          <div className="company-info">
-            <h5>Curated Codes Technologies Pvt. Ltd.</h5>
-            <p>info@curatedcodes.in</p>
-            <p>+91 8962132605</p>
           </div>
+          {/* <p className="info-desc">Contact us during normal business hours.</p> */}
+          
         </div>
       </div>
     </section>

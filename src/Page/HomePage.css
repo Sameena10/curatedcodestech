@@ -1,5 +1,4 @@
 
-
 .hero-banner {
   width: 100%;
   text-align: center;
@@ -27,17 +26,16 @@
 }
 
 .banner-image {
-  width: 100%;               
-  max-width: 1200px;         
-  max-height: 430px;        
-  object-fit: cover;         
+  width: 100%;
+  max-width: 1200px;
+  max-height: 430px;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
   border-radius: 20px;
   border: 20px solid #ccc;  
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .banner-image {
     max-width: 90%;
@@ -82,9 +80,6 @@
 
   }
 }
-
-
-
 /* basics we follow  */
 .basics-section {
   background-color: #f6f6f6;
@@ -194,23 +189,23 @@
 }
 
 .industries-title {
-  font-size: 32px ;
+  font-size: 24px;
   font-weight: 300;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: #002244;
-  text-align: center;
   position: relative;
+  display: inline-block;
   font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .industries-title::after {
   content: "";
   display: block;
-  width: 80px;
-  height: 5px;
+  width: 60px;
+  height: 4px;
   background-color: #000;
-  margin: 16px auto 0;
-  border-radius: 3px;
+  margin: 12px auto 0;
+  border-radius: 2px;
 }
 
 .industry-circle {
@@ -318,15 +313,22 @@
 
 /* services we offer 2 */
 .services-section {
-  padding: 60px 20px;
+  padding: 60px 0; 
   background-color: #f7f7f7;
-  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 100px; 
+  box-sizing: border-box;
 }
 
 .section-header {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   color: #002244;
   text-align: center;
   position: relative;
@@ -334,7 +336,7 @@
 }
 
 .section-header::after {
-  content: "";
+ content: "";
   display: block;
   width: 60px;
   height: 4px;
@@ -343,137 +345,103 @@
   border-radius: 2px;
 }
 
-.services-container {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
 .service-row {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  gap: 40px;
-  padding: 24px 0;
-  background-color: transparent;
-  border-radius: 0;
-  box-shadow: none;
+  gap: 30px;
+  padding: 20px 0;
 }
 
 .service-row.reverse {
   flex-direction: row-reverse;
 }
-
 .service-image-container {
-  flex: 1;
-  background-color: #e6eef7;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  padding: 24px;
+  background-color: transparent; 
+  padding: 16px;
+  border-radius: 0;
+  height: auto;
+}
+
+.icon-square-box img {
+  border-radius: 8px;
+  object-fit: contain;
+  max-width: 35vh;
+  height: auto;
 }
 
 .icon-square-box {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon-square-box svg {
-  width: 70px;
-  height: 70px;
-  color: #002244;
-}
 
 .service-content {
   flex: 2;
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .service-content h3 {
-  font-size: 24px;
+  font-size: 18px;
   color: #003366;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   font-weight: 200;
-  font-family: 'Noto Sans', Arial, sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
-.service-content p {
-  font-size: 20px;
+.service-content p,
+.service-content ul {
+  font-size: 16px;
   color: #000;
-  line-height: 1.2;
-  margin-bottom: 12px;
-  font-family: 'Noto Sans', Arial, sans-serif;
+  line-height: 1.5;
+  font-family: "Noto Sans", Arial, sans-serif;
   font-weight: 200;
+  margin-bottom: 10px;
 }
 
 .service-content ul {
   padding-left: 20px;
-  font-size: 20px;
-  color: #000;
-  font-family: "Noto Sans", Arial, sans-serif;
-  font-weight: 200;
 }
 
 .service-content ul li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
-
 @media (max-width: 768px) {
-
-  .service-content p,
-  .service-content ul,
-  .about-box p,
-  .basics-description {
+  .section-header {
     font-size: 20px;
-    line-height: 1.6;
-    color: #000;
-    font-family: "Noto Sans", Arial, sans-serif;
-    font-weight: 200;
+    margin-bottom: 24px;
+  }
+
+  .services-container {
+    gap: 0; 
   }
 
   .service-row,
   .service-row.reverse {
     flex-direction: column;
     padding: 0;
-    border-radius: 16px;
+    border-radius: 12px;
     background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    margin-bottom: 24px;
+    margin-bottom: 24px; 
   }
 
   .service-image-container {
-    padding: 30px 0;
-    background-color: #e6eef7;
-    border-radius: 16px 16px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 24px 0;
+    border-radius: 12px 12px 0 0;
     width: 100%;
   }
 
-  .section-header {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-
-  .icon-square-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .icon-square-box svg {
-    width: 60px;
-    height: 60px;
-    color: #002244;
+    width: 50px;
+    height: 50px;
   }
 
   .service-content {
@@ -482,38 +450,33 @@
   }
 
   .service-content h3 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
   }
 
   .service-content p,
   .service-content ul {
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-  }
-
-  .services-container {
-    gap: 24px;
   }
 }
 
 /* About Section */
 .about-section {
-  padding: 60px 20px;
+  padding: 40px 0;
   background-color: #ffffff;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 300;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #002244;
   letter-spacing: -0.02em;
   position: relative;
   display: inline-block;
-  font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .about-title::after {
@@ -522,7 +485,7 @@
   width: 60px;
   height: 3px;
   background-color: #000;
-  margin: 12px auto 0;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
@@ -530,17 +493,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 40px;
+  gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-  height: 100%;
+  padding: 0 40px; /* left-right spacing */
+  box-sizing: border-box;
 }
 
 .about-box {
   flex: 1;
-  padding: 0 30px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -550,74 +512,72 @@
 }
 
 .about-box h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   color: #002244;
   font-family: "Noto Sans", Arial, sans-serif;
 }
 
 .about-box p {
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
   color: #000;
   font-family: "Noto Sans", Arial, sans-serif;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .about-title{
-    font-size: 22px;
+  .about-title {
+    font-size: 20px;
   }
+
   .about-content {
     flex-direction: column;
-    gap: 40px;
-    padding: 0 10px;
+    gap: 30px;
+    padding: 0 20px;
   }
 
   .about-box {
-    width: 100%;
     padding: 0 10px;
   }
 
   .about-box h3 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .about-box p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
-
 @media (max-width: 480px) {
-  .about-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .about-box {
-    padding: 10px 10px;
-    width: 100%;
-  }
-
   .about-section {
     padding: 20px 15px;
   }
 
   .about-title {
-    font-size: 24px !important;
-    font-family: "Inter", sans-serif;
-    font-weight: 200 !important;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .about-content {
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .about-box {
+    padding: 10px 10px;
   }
 
   .about-box h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .about-box p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.4;
     margin-bottom: 10px;
   }

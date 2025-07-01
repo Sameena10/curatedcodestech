@@ -3,24 +3,30 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bannerImage from '../images/few.png';
+import bannerImage from '../images/new.png';
 import Contact from './Contact.jsx';
-import {
-  FaSearch,
-  FaUserSecret,
-  FaMapMarkedAlt,
-  FaProjectDiagram,
-  FaMicroscope,
-  FaShieldAlt
-} from "react-icons/fa";
+// import {
+//   FaSearch,
+//   FaUserSecret,
+//   FaMapMarkedAlt,
+//   FaProjectDiagram,
+//   FaMicroscope,
+//   FaShieldAlt
+// } from "react-icons/fa";
+import cyber from '../images/cyber.jpeg';
+import location from '../images/location.jpeg';
+import fusion from '../images/fusion.jpeg';
+import digital from '../images/digital.jpeg';
+import lawful from '../images/lawful.jpeg';
+import osint from '../images/osint.jpeg';
 
 const HomePage = () => {
   const industries = [
     { name: "Law Enforcement", color: "#000000", textColor: "#fff" },
     { name: "Cyber Security", color: "#e6b422", textColor: "#fff" },
-    { name: "OSINT", color: "#c48455", textColor: "#fff" },
     { name: "Telecom", color: "#4c5c57", textColor: "#fff" },
     { name: "Defence", color: "#4a2b23", textColor: "#fff" },
+    { name: "National Security", color: "#c48455", textColor: "#fff" },
   ];
   const services = [
     {
@@ -33,7 +39,8 @@ const HomePage = () => {
         "Sentiment & keyword analysis",
         "Custom dashboards",
       ],
-      icon: <FaSearch size={100} color="#002244" />,
+      icon: osint,
+
     },
     {
       title: "Lawful Interception",
@@ -45,7 +52,7 @@ const HomePage = () => {
         "Compliance with regulations",
         "Multi-channel support",
       ],
-      icon: <FaUserSecret size={100} color="#002244" />,
+      icon: lawful,
     },
     {
       title: "Location-Based Services",
@@ -56,7 +63,7 @@ const HomePage = () => {
         "Live tracking integration",
         "Mapping & route analysis",
       ],
-      icon: <FaMapMarkedAlt size={100} color="#002244" />,
+      icon: location,
     },
     {
       title: "Fusion Centre",
@@ -67,7 +74,7 @@ const HomePage = () => {
         "Real-time threat feeds",
         "Customizable access controls",
       ],
-      icon: <FaProjectDiagram size={100} color="#002244" />,
+      icon: fusion,
     },
     {
       title: "Digital Forensics",
@@ -78,7 +85,7 @@ const HomePage = () => {
         "Chain-of-custody logging",
         "Data recovery tools",
       ],
-      icon: <FaMicroscope size={100} color="#002244" />,
+      icon: digital,
     },
     {
       title: "Cyber Security",
@@ -90,25 +97,25 @@ const HomePage = () => {
         "Vulnerability assessments",
         "Endpoint protection",
       ],
-      icon: <FaShieldAlt size={100} color="#002244" />,
+      icon: cyber,
     },
   ];
 
   const basics = [
+    {
+      title: "Proactive Threat Monitoring",
+      description:
+        "Implementing systems to detect early signs of criminal activity across digital and physical spaces.",
+    },
     {
       title: "Data-Driven Decision Making",
       description:
         "Leveraging data to support informed, evidence-based decisions in investigations and operations.",
     },
     {
-      title: "Technology Integration into Workflows",
+      title: "Scalable and Adaptive Solutions",
       description:
-        "Embedding IT solutions into daily law enforcement processes without disrupting critical operations.",
-    },
-    {
-      title: "Automation of Routine Investigative Tasks",
-      description:
-        "Identifying and automating repetitive tasks to enhance focus on complex investigative work.",
+        "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
     },
     {
       title: "Collaboration-Centric Development",
@@ -116,14 +123,14 @@ const HomePage = () => {
         "Building secure platforms that promote real-time, inter-agency communication and teamwork.",
     },
     {
-      title: "Proactive Threat Monitoring",
+      title: "Technology Integration into Workflows",
       description:
-        "Implementing systems to detect early signs of criminal activity across digital and physical spaces.",
+        "Embedding IT solutions into daily law enforcement processes without disrupting critical operations.",
     },
     {
-      title: "Scalable and Adaptive Solutions",
+      title: "Automation of Investigative Tasks",
       description:
-        "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
+        "Identifying and automating repetitive tasks to enhance focus on complex investigative work.",
     },
   ];
 
@@ -203,28 +210,30 @@ const HomePage = () => {
         </div>
       </section>
       <section className="services-section">
-        <h2 className="section-header">Products we offer</h2>
-        <div className="services-container">
-          {services.map((service, index) => (
-            <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
-              <div className="service-image-container">
-                <div className="icon-square-box">
-                  {service.icon}
-                </div>
-              </div>
-              <div className="service-content">
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-                <ul>
-                  {service.features.map((feature, i) => (
-                    <li key={i}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
+  <h2 className="section-header">Products we offer</h2>
+  <div className="services-container">
+    {services.map((service, index) => (
+      <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
+        <div className="service-image-container">
+          <div className="icon-square-box">
+            {/* {service.icon} */}
+            <img src={service.icon} alt={service.title} />
+
+          </div>
         </div>
-      </section>
+        <div className="service-content">
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <ul>
+            {service.features.map((feature, i) => (
+              <li key={i}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
       <section className="about-section">
         <h2 className="about-title">About us</h2>
         <div className="about-content">
@@ -246,7 +255,6 @@ const HomePage = () => {
       <footer className="footer">
         <div className="social-icons">
           <a href="https://www.facebook.com/curatedcodes" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/posts/curated-codes-technologies_mernfullstack-itacademy-careerlauncher-activity-7274404527087190017-lsw_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZWvO8Bg0ggwsc2pFdMvHiXLVsim0-juag" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
           <a href="https://x.com/Curatedcodes_in" aria-label="X"><i className="fab fa-x-twitter"></i></a>
           <a href="https://www.youtube.com/channel/UC-g0Fa_E4bhwQF9SJ0-dDlg" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
