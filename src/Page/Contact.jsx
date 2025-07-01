@@ -16,7 +16,7 @@ const ContactUs = () => {
 
   const validate = () => {
     const { name, phone, email } = formData;
-    const phoneRegex = /^[0-9]{10,15}$/;
+    const phoneRegex = /^\d+$/; 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!name.trim()) {
@@ -24,7 +24,7 @@ const ContactUs = () => {
       return false;
     }
     if (!phoneRegex.test(phone)) {
-      toast.error('Enter a valid phone number (10–15 digits)');
+      toast.error('Phone must contain numbers');
       return false;
     }
     if (!emailRegex.test(email)) {
@@ -38,8 +38,8 @@ const ContactUs = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === 'phone' && !/^\d*$/.test(value)) {
-      return; 
+    if (name === 'phone' && /[^\d]/.test(value)) {
+      return; // restrict to digits only
     }
 
     setFormData({

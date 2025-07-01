@@ -242,11 +242,11 @@ const HomePage = () => {
       <Contact />
       <footer className="footer">
         <div className="social-icons">
-          <a href="#" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/curatedcodes" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a>
           <a href="#" aria-label="Instagram"><i className="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/posts/curated-codes-technologies_mernfullstack-itacademy-careerlauncher-activity-7274404527087190017-lsw_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZWvO8Bg0ggwsc2pFdMvHiXLVsim0-juag" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="X"><i className="fab fa-x-twitter"></i></a>
-          <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
+          <a href="https://x.com/Curatedcodes_in" aria-label="X"><i className="fab fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/channel/UC-g0Fa_E4bhwQF9SJ0-dDlg" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
         </div>
         <div className="footer-bottom">
           <p>Copyright © 2025 Curated Codes - All Rights Reserved.</p>
