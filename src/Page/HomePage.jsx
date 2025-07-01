@@ -3,7 +3,7 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bannerImage from '../images/c.png';
+import bannerImage from '../images/few.png';
 import Contact from './Contact.jsx';
 import {
   FaSearch,
@@ -144,10 +144,13 @@ const HomePage = () => {
       <section>
         <div className="hero-banner">
           <h2 className="hero-heading">
-            AI powered intelligence for every critical situation
+            Operational Intelligence Starts Here
           </h2>
           <img src={bannerImage} alt="Curated Codes Banner" className="banner-image" />
         </div>
+        <h2 className="heros-heading">
+            AI-Powered Intelligence Solutions for Every Critical Situation
+          </h2>
       </section>
       <section>
         <div className="basics-section">

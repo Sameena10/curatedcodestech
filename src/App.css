@@ -3,4 +3,5 @@ html, body {
   padding: 0;
   height: 100%;
   overflow-x: hidden;
+  zoom:1;
 }

@@ -1,3 +1,5 @@
+
+
 .hero-banner {
   width: 100%;
   text-align: center;
@@ -7,32 +9,57 @@
 }
 
 .hero-heading {
-  font-size: 32px;
+  font-size: 64px;
   font-weight: 300;
   margin: 20px 0;
-  font-family: 'Inter', sans-serif;
   color: #002244;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.heros-heading {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 20px 0;
+  color: #002244;
+  text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
 .banner-image {
-  width: 100%;
-  height: auto;
+  width: 100%;               
+  max-width: 1600px;         
+  max-height: 600px;        
+  object-fit: cover;         
   display: block;
-  object-fit: cover;
-  border-radius: 0;
   margin: 0 auto;
-  max-height: 600px;
   border-radius: 20px;
+  border: 20px solid #ccc;  
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .banner-image {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
   .hero-heading {
     font-size: 22px;
     margin: 16px 0;
+
+  }
+  .heros-heading {
+    font-size: 22px;
+    margin: 16px 0;
+
   }
 
   .banner-image {
-    max-height: 600px;
+    max-width: 95%;
+    max-height: none; 
+    border: 2px solid #ccc;  
+ 
   }
 }
 
@@ -41,11 +68,20 @@
     font-size: 20px;
     margin: 12px 0;
   }
+  .heros-heading {
+    font-size: 22px;
+    margin: 16px 0;
+
+  }
 
   .banner-image {
-    max-height: 500px;
+    max-width: 100%;
+    border-radius: 12px;
+    border: 2px solid #ccc;  
+
   }
 }
+
 
 
 /* basics we follow  */
@@ -53,7 +89,6 @@
   background-color: #f6f6f6;
   color: #000;
   text-align: center;
-  font-family: 'Inter', sans-serif;
   width: 100%;
   padding: 40px 20px;
   box-sizing: border-box;
@@ -97,12 +132,14 @@
   font-weight: 200;
   color: #003366;
   margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
 }
 
 .basics-description {
   font-size: 20px;
   line-height: 1.6;
   color: #000;
+  font-family: "Inter", sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -122,7 +159,7 @@
 
   .basics-description {
     font-size: 20px;
-    font-family: "Inter", sans-serif;
+    /* font-family: "Inter", sans-serif; */
   }
 }
 
