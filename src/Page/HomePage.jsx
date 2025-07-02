@@ -205,7 +205,7 @@ const HomePage = () => {
   <div className="services-container">
     {services.map((service, index) => (
       <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
-        <div className="service-image-container">
+        <div className="service-image-container" >
           <div className="icon-square-box">
             {/* {service.icon} */}
             <img src={service.icon} alt={service.title} />

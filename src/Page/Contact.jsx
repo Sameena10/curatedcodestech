@@ -54,10 +54,10 @@ const ContactUs = () => {
     if (!validate()) return;
 
     emailjs.sendForm(
-      'service_pneyvpr',
-      'template_hztdk5s',
+      'service_w4drkks',
+      'template_k6pxo6b',
       formRef.current,
-      'eo2-EpHW7Vqwv80bc'
+      'uwKz2pmOF48-syYsH'
     ).then(
       () => {
         toast.success('Message sent successfully!');
@@ -121,7 +121,7 @@ const ContactUs = () => {
         <div className="contact-info">
           <div className="company-info">
             <h5>Curated Codes Technologies Pvt. Ltd.</h5>
-            <p>info@curatedcodes.in</p>
+            <p>mohammad@curatedcodes.in</p>
             <p>+91 8962132605</p>
           </div>
           <div className="info-title">
