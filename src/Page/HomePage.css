@@ -432,9 +432,9 @@
   }
 
   .icon-square-box img {
-    width: 70%;                /* Smaller image */
-    max-width: 300px;          /* Optional max limit */
-    height: auto;              /* Maintain aspect ratio */
+    width: 70%;                
+    max-width: 300px;          
+    height: auto;              
     object-fit: contain;
     border-radius: 15px;
     display: block;
