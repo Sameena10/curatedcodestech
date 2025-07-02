@@ -100,16 +100,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 60px;
 }
-
-/* .info-title {
-  font-size: 20px;
-  font-weight: 200;
-  margin-bottom: 8px;
-  color: #000;
-  text-align: center;
-  font-family: "Noto Sans", Arial, sans-serif;
-} */
 
 .info-desc {
   font-size: 18px;

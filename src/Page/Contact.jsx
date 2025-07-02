@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.css';
@@ -39,7 +39,7 @@ const ContactUs = () => {
     const { name, value } = e.target;
 
     if (name === 'phone' && /[^\d]/.test(value)) {
-      return; // restrict to digits only
+      return; 
     }
 
     setFormData({
@@ -82,8 +82,6 @@ const ContactUs = () => {
           noValidate
           ref={formRef}
         >
-          {/* <h3 className="form-heading">Contact Us</h3> */}
-
           <input
             type="text"
             name="name"
@@ -139,9 +137,7 @@ const ContactUs = () => {
             />
             Message us on WhatsApp
           </a>
-          </div>
-          {/* <p className="info-desc">Contact us during normal business hours.</p> */}
-          
+          </div>          
         </div>
       </div>
     </section>
