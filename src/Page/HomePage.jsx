@@ -3,16 +3,8 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bannerImage from '../images/new.png';
+import bannerImage from '../images/optimized.webp';
 import Contact from './Contact.jsx';
-// import {
-//   FaSearch,
-//   FaUserSecret,
-//   FaMapMarkedAlt,
-//   FaProjectDiagram,
-//   FaMicroscope,
-//   FaShieldAlt
-// } from "react-icons/fa";
 import cyber from '../images/cyber.jpeg';
 import location from '../images/location.jpeg';
 import fusion from '../images/fusion.jpeg';
