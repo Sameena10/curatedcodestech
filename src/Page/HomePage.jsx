@@ -14,10 +14,10 @@ import osint from '../images/os.webp';
 const HomePage = () => {
   const industries = [
     { name: "Law Enforcement", color: "#000000", textColor: "#fff" },
-    { name: "Cyber Security", color: "#e6b422", textColor: "#fff" },
-    { name: "Telecom", color: "#4c5c57", textColor: "#fff" },
-    { name: "Defence", color: "#4a2b23", textColor: "#fff" },
-    { name: "National Security", color: "#c48455", textColor: "#fff" },
+    { name: "Cyber Security", color: "#000000", textColor: "#fff" },
+    { name: "Telecom", color: "#000000", textColor: "#fff" },
+    { name: "Defence", color: "#000000", textColor: "#fff" },
+    { name: "National Security", color: "#000000", textColor: "#fff" },
   ];
   const services = [
     {

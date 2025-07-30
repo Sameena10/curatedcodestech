@@ -423,39 +423,34 @@
 }
 
 @media (max-width: 768px) {
-  .services-container {
-    padding: 0 16px;
-  }
-
   .service-row,
   .service-row.reverse {
     flex-direction: column;
-    align-items: center; /* Ensures both image and text are centered */
+    align-items: center;
     text-align: center;
   }
 
   .icon-square-box {
+    width: 250px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0 auto 20px auto; /* Add bottom spacing */
+    margin: 0 auto 20px auto;
   }
 
   .icon-square-box img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
     border-radius: 15px;
-    border: 4px solid #003366; /* optional: for styling */
-    display: block;
-    margin: 0 auto;
+    /* border: 4px solid #003366;  */
   }
 
   .service-content {
     text-align: center;
     margin-top: 10px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .service-content p,
@@ -463,7 +458,6 @@
     text-align: left;
   }
 }
-
 
 /* About Section */
 .about-section {
