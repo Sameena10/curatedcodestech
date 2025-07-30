@@ -8,32 +8,32 @@
 }
 
 .hero-heading {
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 55px;
+  font-weight: 100;
   margin: 20px 0;
-  color: #002244;
+  /* color: #002244; */
   text-align: center;
-  font-family: 'Noto Sans', Arial, sans-serif;
+  font-family: 'Raleway', sans-serif;
   color:#000;
 }
 .heros-heading {
   font-size: 32px;
-  font-weight: 300;
+  font-weight: 100;
   margin: 20px 0;
-  color: #555;
+  color: #000;
   text-align: center;
-  font-family: 'Noto Sans', Arial, sans-serif;
+  font-family: 'Raleway',sans-serif;
 }
 
 .banner-image {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1700px;
   max-height: 430px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
   border-radius: 20px;
-  border: 20px solid #ccc;  
+  /* border: 20px solid #ccc;   */
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +91,7 @@
 }
 
 .section-title {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 300;
   margin-bottom: 40px;
   color: #002244;
@@ -124,7 +124,7 @@
 }
 
 .basics-title {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   color: #003366;
   margin-bottom: 10px;
@@ -132,7 +132,7 @@
 }
 
 .basics-description {
-  font-size: 16px;
+  font-size: 19px;
   line-height: 1.6;
   color: #000;
   font-family: "Noto Sans", Arial, sans-serif;
@@ -189,7 +189,7 @@
 }
 
 .industries-title {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 300;
   margin-bottom: 40px;
   color: #002244;
@@ -326,7 +326,7 @@
 }
 
 .section-header {
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 300;
   margin-bottom: 30px;
   color: #002244;
@@ -354,6 +354,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+    margin-right: 25px;
+
 }
 
 .service-row {
@@ -367,18 +369,21 @@
 .service-image-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex: 1;
   margin-right: 30px; 
-   background-blend-mode: multiply;
+  border-color: #fff;
 }
 
 .icon-square-box img {
   width: 100%;
-  height: 250px;
-  object-fit: fill;
+  height: 350px;
+  max-width: 800px;
+  /* object-fit: fill; */
   border-radius: 15px;
+  /* border: 15px solid #fff; */
   background-blend-mode: multiply;
+
 }
 
 
@@ -390,19 +395,23 @@
 }
 
 .service-content h3 {
-  font-size: 20px;
+  font-size: 22px;
   color: #003366;
   margin-bottom: 10px;
   font-weight: 400;
+    font-family: "Noto Sans", Arial, sans-serif;
+
 }
 
 .service-content p,
 .service-content ul {
-  font-size: 16px;
+  font-size: 19px;
   color: #000;
   line-height: 1.6;
   font-weight: 300;
   margin-bottom: 10px;
+  font-family: "Noto Sans", Arial, sans-serif;
+
 }
 
 .service-content ul {
@@ -421,30 +430,40 @@
   .service-row,
   .service-row.reverse {
     flex-direction: column;
+    align-items: center; /* Ensures both image and text are centered */
+    text-align: center;
   }
 
   .icon-square-box {
     display: flex;
-    justify-content: center;   /* Center horizontally */
-    align-items: center;       /* Center vertically (if container has height) */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto; /* Add bottom spacing */
   }
 
   .icon-square-box img {
-    width: 70%;                
-    max-width: 300px;          
-    height: auto;              
-    object-fit: contain;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
     border-radius: 15px;
+    border: 4px solid #003366; /* optional: for styling */
     display: block;
+    margin: 0 auto;
   }
 
   .service-content {
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  .service-content p,
+  .service-content ul {
     text-align: left;
-    margin-top: 20px;
   }
 }
+
 
 /* About Section */
 .about-section {
@@ -455,7 +474,7 @@
 }
 
 .about-title {
-  font-size: 26px;
+  font-size: 25px;
   font-weight: 300;
   margin-bottom: 30px;
   color: #002244;
@@ -497,7 +516,7 @@
 }
 
 .about-box h3 {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 16px;
   color: #002244;
@@ -505,7 +524,7 @@
 }
 
 .about-box p {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.5;
   color: #000;

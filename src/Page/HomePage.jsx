@@ -4,12 +4,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import bannerImage from '../images/optimized.webp';
 import Contact from './Contact.jsx';
-import cyber from '../images/cyber.jpeg';
-import location from '../images/location.jpeg';
-import fusion from '../images/fusion.jpeg';
-import digital from '../images/digital.jpeg';
-import lawful from '../images/lawful.jpeg';
-import osint from '../images/osint.jpeg';
+import cyber from '../images/cs.png';
+import location from '../images/loc.jpg';
+import fusion from '../images/fc.jpg';
+import digital from '../images/dg.jpg';
+import lawful from '../images/lw.jpg';
+import osint from '../images/os.webp';
 
 const HomePage = () => {
   const industries = [
