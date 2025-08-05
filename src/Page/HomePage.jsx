@@ -8,7 +8,7 @@ import fusion from '../images/fc.jpg';
 import digital from '../images/dg.jpg';
 import lawful from '../images/lw.jpg';
 import osint from '../images/os.webp';
-import leftImage from '../images/left.png';
+import leftImage from '../images/men.png';
 import rightImage from '../images/right.png';
 import circleImage from '../images/cc.png';
 
@@ -136,10 +136,7 @@ const HomePage = () => {
     <div className="banner-images">
       <img src={leftImage} alt="Left Side" className="side-img" />
 
-      {/* Vertical white split line */}
       <div className="vertical-line"></div>
-
-      {/* Circle logo */}
       <div className="circle-wrapper">
         <img src={circleImage} alt="Center Circle" className="circle-img" />
       </div>
@@ -152,8 +149,6 @@ const HomePage = () => {
     AI-powered Intelligence Solutions for Every Critical Situation
   </h2>
 </section>
-
-
       <section>
         <div className="basics-section">
           <h2 className="section-title">Approaches we take to empower law enforcement</h2>
