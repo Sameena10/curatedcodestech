@@ -1,85 +1,133 @@
 
 .hero-banner {
-  width: 100%;
   text-align: center;
-  background-color: #ffffff;
-  padding: 0;
-  margin: 0;
+  margin-bottom: 2rem;
 }
 
 .hero-heading {
   font-size: 55px;
   font-weight: 100;
   margin: 20px 0;
-  /* color: #002244; */
-  text-align: center;
   font-family: 'Raleway', sans-serif;
-  color:#000;
+  color: #000;
 }
+
 .heros-heading {
   font-size: 32px;
   font-weight: 100;
   margin: 20px 0;
+  font-family: 'Raleway', sans-serif;
   color: #000;
   text-align: center;
-  font-family: 'Raleway',sans-serif;
+}
+ .banner-images {
+  position: relative;
+  display: flex;
+  width: 100%; 
+  height: 430px; 
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.banner-image {
-  width: 100%;
-  max-width: 1700px;
-  max-height: 430px;
+.side-img {
+  flex: 1; 
+  height: 100%;
   object-fit: cover;
-  display: block;
-  margin: 0 auto;
-  border-radius: 20px;
-  /* border: 20px solid #ccc;   */
+}
+
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* Circle logo wrapper */
+.circle-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Circle logo image */
+.circle-img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 50%;
+  /* border: 3px solid white; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* background-color: black;  */
 }
 
 @media (max-width: 1024px) {
-  .banner-image {
-    max-width: 90%;
+  .hero-heading {
+    font-size: 42px;
+  }
+
+  .heros-heading {
+    font-size: 26px;
+  }
+
+  .circle-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vertical-line {
+    width: 4px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-heading {
-    font-size: 22px;
+    font-size: 30px;
     margin: 16px 0;
-
   }
+
   .heros-heading {
-    font-size: 22px;
+    font-size: 20px;
     margin: 16px 0;
-
   }
 
-  .banner-image {
-    max-width: 95%;
-    max-height: none; 
-    border: 2px solid #ccc;  
- 
+  .circle-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .vertical-line {
+    width: 3px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-heading {
-    font-size: 20px;
+    font-size: 24px;
     margin: 12px 0;
   }
-  .heros-heading {
-    font-size: 22px;
-    margin: 16px 0;
 
+  .heros-heading {
+    font-size: 18px;
+    margin: 12px 0;
   }
 
-  .banner-image {
-    max-width: 100%;
-    border-radius: 12px;
-    border: 2px solid #ccc;  
+  .circle-img {
+    width: 60px;
+    height: 60px;
+  }
 
+  .vertical-line {
+    width: 2px;
   }
 }
+
 /* basics we follow  */
 .basics-section {
   background-color: #f6f6f6;

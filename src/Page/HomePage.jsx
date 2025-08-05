@@ -2,22 +2,22 @@ import './HomePage.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import bannerImage from '../images/optimized.webp';
 import Contact from './Contact.jsx';
-import cyber from '../images/cs.png';
 import location from '../images/loc.jpg';
 import fusion from '../images/fc.jpg';
 import digital from '../images/dg.jpg';
 import lawful from '../images/lw.jpg';
 import osint from '../images/os.webp';
+import leftImage from '../images/left.png';
+import rightImage from '../images/right.png';
+import circleImage from '../images/cc.png';
 
 const HomePage = () => {
   const industries = [
     { name: "Law Enforcement", color: "#000000", textColor: "#fff" },
-    { name: "Cyber Security", color: "#000000", textColor: "#fff" },
     { name: "Telecom", color: "#000000", textColor: "#fff" },
     { name: "Defence", color: "#000000", textColor: "#fff" },
-    { name: "National Security", color: "#000000", textColor: "#fff" },
+    { name: "National Security", color: "#141010ff", textColor: "#fff" },
   ];
   const services = [
     {
@@ -78,18 +78,6 @@ const HomePage = () => {
       ],
       icon: digital,
     },
-    {
-      title: "Cyber Security",
-      description:
-        "Protect critical systems with real-time threat detection, endpoint protection, and AI-based insights. Built for both enterprise and national defense environments.",
-      features: [
-        "Threat detection & response",
-        "Secure communication pipelines",
-        "Vulnerability assessments",
-        "Endpoint protection",
-      ],
-      icon: cyber,
-    },
   ];
 
   const basics = [
@@ -104,7 +92,7 @@ const HomePage = () => {
         "Leveraging data to support informed, evidence-based decisions in investigations and operations.",
     },
     {
-      title: "Scalable and Adaptive Solutions",
+      title: "Scalable & Adaptive Solutions",
       description:
         "Designing solutions that evolve with law enforcement needs and adapt to emerging challenges.",
     },
@@ -140,16 +128,32 @@ const HomePage = () => {
   return (
     <>
       <section>
-        <div className="hero-banner">
-          <h2 className="hero-heading">
-            Operational Intelligence Starts Here
-          </h2>
-          <img src={bannerImage} alt="Curated Codes Banner" className="banner-image" />
-        </div>
-        <h2 className="heros-heading">
-            AI-powered Intelligence Solutions for Every Critical Situation
-          </h2>
-      </section>
+  <div className="hero-banner">
+    <h2 className="hero-heading">
+      Operational Intelligence Starts Here
+    </h2>
+
+    <div className="banner-images">
+      <img src={leftImage} alt="Left Side" className="side-img" />
+
+      {/* Vertical white split line */}
+      <div className="vertical-line"></div>
+
+      {/* Circle logo */}
+      <div className="circle-wrapper">
+        <img src={circleImage} alt="Center Circle" className="circle-img" />
+      </div>
+
+      <img src={rightImage} alt="Right Side" className="side-img" />
+    </div>
+  </div>
+
+  <h2 className="heros-heading">
+    AI-powered Intelligence Solutions for Every Critical Situation
+  </h2>
+</section>
+
+
       <section>
         <div className="basics-section">
           <h2 className="section-title">Approaches we take to empower law enforcement</h2>
