@@ -74,6 +74,17 @@
     font-size: 26px;
   }
 
+  .banner-images {
+    flex-direction: row;
+    height: 320px; /* adjust for tablets/laptops */
+  }
+
+  .side-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .circle-img {
     width: 100px;
     height: 100px;
@@ -84,6 +95,7 @@
   }
 }
 
+
 @media (max-width: 768px) {
   .hero-heading {
     font-size: 30px;
@@ -93,6 +105,17 @@
   .heros-heading {
     font-size: 20px;
     margin: 16px 0;
+  }
+
+  .banner-images {
+    flex-direction: row; /* Ensure row layout remains */
+    height: 220px;        /* Adjust height for smaller screens */
+  }
+
+  .side-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .circle-img {
@@ -114,6 +137,17 @@
   .heros-heading {
     font-size: 18px;
     margin: 12px 0;
+  }
+
+  .banner-images {
+    flex-direction: row;
+    height: 180px;
+  }
+
+  .side-img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .circle-img {
