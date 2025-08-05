@@ -47,7 +47,6 @@
   z-index: 1;
 }
 
-/* Circle logo wrapper */
 .circle-wrapper {
   position: absolute;
   top: 50%;
@@ -56,7 +55,6 @@
   z-index: 2;
 }
 
-/* Circle logo image */
 .circle-img {
   width: 130px;
   height: 130px;
