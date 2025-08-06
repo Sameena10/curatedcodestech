@@ -26,7 +26,6 @@ const HomePage = () => {
         "We provide OSINT tools to gather public data securely from platforms like social media, news, and the dark web. Our platform uses sentiment analysis, NLP, and real-time alerts to support investigations and threat detection.",
       features: [
         "Social media monitoring",
-        "Web scraping & aggregation",
         "Sentiment & keyword analysis",
         "Custom dashboards",
       ],
@@ -41,7 +40,6 @@ const HomePage = () => {
         "Real-time interception",
         "Secure data delivery",
         "Compliance with regulations",
-        "Multi-channel support",
       ],
       icon: lawful,
     },
@@ -201,14 +199,15 @@ const HomePage = () => {
       </section>
       <section className="services-section">
   <h2 className="section-header">Products we offer</h2>
-  <div className="services-container">
-    {services.map((service, index) => (
-      <div className={`service-row ${index % 2 === 1 ? 'reverse' : ''}`} key={index}>
-        <div className="service-image-container" >
+  {services.map((service, index) => (
+    <div
+      className={`service-row ${index % 2 === 1 ? 'reverse bg-grey' : 'bg-white'}`}
+      key={index}
+    >
+      <div className="service-inner">
+        <div className="service-image-container">
           <div className="icon-square-box">
-            {/* {service.icon} */}
             <img src={service.icon} alt={service.title} />
-
           </div>
         </div>
         <div className="service-content">
@@ -221,9 +220,11 @@ const HomePage = () => {
           </ul>
         </div>
       </div>
-    ))}
-  </div>
+    </div>
+  ))}
 </section>
+
+
       <section className="about-section">
         <h2 className="about-title">About us</h2>
         <div className="about-content">
