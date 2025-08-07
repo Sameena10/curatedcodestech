@@ -8,9 +8,10 @@ import fusion from '../images/fc.jpg';
 import digital from '../images/dg.jpg';
 import lawful from '../images/lw.jpg';
 import osint from '../images/os.webp';
-import leftImage from '../images/men.png';
-import rightImage from '../images/right.png';
+import leftImage from '../images/new.png';
+import rightImage from '../images/data.png';
 import circleImage from '../images/cc.png';
+// import demoVideo from '../images/video.mp4';
 
 const HomePage = () => {
   const industries = [
@@ -132,17 +133,16 @@ const HomePage = () => {
     </h2>
 
     <div className="banner-images">
-      <img src={leftImage} alt="Left Side" className="side-img" />
+    <img src={leftImage} alt="Left Side" className="side-img" />
 
-      <div className="vertical-line"></div>
-      <div className="circle-wrapper">
-        <img src={circleImage} alt="Center Circle" className="circle-img" />
-      </div>
+   <div className="vertical-line"></div>
+     <div className="circle-wrapper">
+       <img src={circleImage} alt="Center Circle" className="circle-img" />
+     </div>
 
-      <img src={rightImage} alt="Right Side" className="side-img" />
-    </div>
+     <img src={rightImage} alt="Right Side" className="side-img" />
+   </div>
   </div>
-
   <h2 className="heros-heading">
     AI-powered Intelligence Solutions for Every Critical Situation
   </h2>

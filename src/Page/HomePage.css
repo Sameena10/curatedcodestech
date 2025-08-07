@@ -66,8 +66,6 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: #fff; 
 }
-
-
 @media (max-width: 1024px) {
   .hero-heading {
     font-size: 42px;
@@ -404,6 +402,8 @@
   text-align: center;
   font-family: "Noto Sans", Arial, sans-serif;
   position: relative;
+  background-color: #f0f0f0;
+  padding: 25px;
 }
 
 .section-header::after {
@@ -508,13 +508,13 @@
 }
 
 .bg-white {
-  background-color: #f0f0f0;
-  height: 320px;
+  background-color: #ffffff;
+  /* height: 320px; */
 }
 
 .bg-grey {
-  background-color:#ffffff;
-  height:320px;
+  background-color:#f0f0f0;
+  /* height:320px; */
 }
 
 @media (max-width: 1024px) {
@@ -588,7 +588,7 @@
 /* About Section */
 .about-section {
   padding: 40px 0;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   text-align: center;
   font-family: "Noto Sans", Arial, sans-serif;
 }
@@ -631,7 +631,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: #fff;
+  background-color: #f0f0f0;
   box-sizing: border-box;
 }
 
