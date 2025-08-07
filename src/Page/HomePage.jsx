@@ -6,10 +6,11 @@ import Contact from './Contact.jsx';
 import location from '../images/loc.jpg';
 import fusion from '../images/fc.jpg';
 import digital from '../images/dg.jpg';
-import lawful from '../images/lw.jpg';
+import lawful from '../images/lawful.png';
 import osint from '../images/os.webp';
-import leftImage from '../images/new.png';
-import rightImage from '../images/data.png';
+// import leftImage from '../images/new.png';
+// import rightImage from '../images/data.png';
+import bgImage from '../images/image10.png';
 import circleImage from '../images/cc.png';
 // import demoVideo from '../images/video.mp4';
 
@@ -132,7 +133,7 @@ const HomePage = () => {
       Operational Intelligence Starts Here
     </h2>
 
-    <div className="banner-images">
+    {/* <div className="banner-images">
     <img src={leftImage} alt="Left Side" className="side-img" />
 
    <div className="vertical-line"></div>
@@ -141,7 +142,11 @@ const HomePage = () => {
      </div>
 
      <img src={rightImage} alt="Right Side" className="side-img" />
-   </div>
+   </div> */}
+   <div className="image-container">
+         <img src={bgImage} alt="Background" className="background-image" />
+         <img src={circleImage} alt="Logo" className="center-logo" />
+       </div>
   </div>
   <h2 className="heros-heading">
     AI-powered Intelligence Solutions for Every Critical Situation
