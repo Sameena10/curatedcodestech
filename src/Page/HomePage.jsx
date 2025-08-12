@@ -9,7 +9,7 @@ import digital from '../images/dg.jpg';
 import lawful from '../images/lawful.png';
 import osint from '../images/os.webp';
 import bgImage from '../images/image10.webp';
-import circleImage from '../images/cc.webp';
+import circleImage from '../images/CC.webp';
 
 const HomePage = () => {
   const industries = [
