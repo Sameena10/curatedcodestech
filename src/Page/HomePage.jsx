@@ -8,11 +8,8 @@ import fusion from '../images/fc.jpg';
 import digital from '../images/dg.jpg';
 import lawful from '../images/lawful.png';
 import osint from '../images/os.webp';
-// import leftImage from '../images/new.png';
-// import rightImage from '../images/data.png';
-import bgImage from '../images/image10.png';
+import bgImage from '../images/image10.webp';
 import circleImage from '../images/cc.png';
-// import demoVideo from '../images/video.mp4';
 
 const HomePage = () => {
   const industries = [
