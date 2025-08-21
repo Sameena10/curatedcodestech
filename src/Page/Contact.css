@@ -150,35 +150,24 @@
   margin: 2px 0;
   font-family: "Noto Sans", Arial, sans-serif;
 }
+.thank-you-message {
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Noto Sans", Arial, sans-serif;
+}
 
-/* @media (max-width: 768px) {
-  .contact-title {
-    font-size: 22px;
-  }
+.thank-you-message h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
 
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.thank-you-message p {
+  font-size: 16px;
+  font-weight: 300;
+}
 
-  .contact-form,
-  .contact-info {
-    width: 100%;
-    align-items: center;
-  }
-
-  .form-heading,
-  .info-title,
-  .info-desc {
-    text-align: center;
-  }
-
-  .form-button {
-    padding: 8px 24px;
-    font-size: 14px;
-  }
-} */
 @media (max-width: 768px) {
   .contact-title {
     font-size: 22px;
@@ -207,6 +196,18 @@
 
   .form-button {
     padding: 8px 24px;
+    font-size: 14px;
+  }
+  .thank-you-message {
+    padding: 30px 16px;
+    max-width: 95%;
+  }
+
+  .thank-you-message h3 {
+    font-size: 20px;
+  }
+
+  .thank-you-message p {
     font-size: 14px;
   }
 }
