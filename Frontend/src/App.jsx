@@ -6,6 +6,7 @@ import HomePage from './Page/HomePage';
 import "./App.css"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Dashboard from './Page/Dashboard';
 
 
 
@@ -16,7 +17,7 @@ function App() {
     <div className="main-content">
     <Routes>
             <Route path="/" element={<HomePage/>} />
-                   
+            <Route path="/dashboard" element={<Dashboard />} />
     </Routes>
     </div>
     </div>
