@@ -140,29 +140,6 @@ const ContactUs = () => {
               Message us on WhatsApp
             </a>
           </div>
-          <div className="info-title">
-            <button className="login-button" onClick={() => setShowLogin(true)}>
-              <img src="https://img.icons8.com/ios-filled/20/000000/login-rounded-right.png" alt="Login" style={{ marginRight: "8px" }} />
-              Login
-            </button>
-          </div>
-
-          {showLogin && (
-            <>
-              <div className="login-overlay" onClick={() => setShowLogin(false)}></div>
-              <div className="login-form">
-                <h3>Login</h3>
-                <form onSubmit={handleLoginSubmit}>
-                  <input type="text" name="username" placeholder="Username" value={loginData.username} onChange={handleLoginChange} required />
-                  <input type="password" name="password" placeholder="Password" value={loginData.password} onChange={handleLoginChange} required />
-                  <div className="button-row">
-                    <button type="submit" className="login-btn">Login</button>
-                    <button type="button" className="close-btn" onClick={() => setShowLogin(false)}>Close</button>
-                  </div>
-                </form>
-              </div>
-            </>
-          )}
         </div>
       </div>
     </section>
